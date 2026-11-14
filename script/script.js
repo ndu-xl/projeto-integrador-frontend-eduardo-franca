@@ -1,11 +1,3 @@
-/* =========================================================
-   SELLCAR - script.js
-   1. Configuração das regras de parcelamento
-   2. Funções de cálculo e formatação
-   3. Catálogo: seletor de parcelas dentro de cada carro
-   4. Contato: resumo do carro e das parcelas escolhidas
-   ========================================================= */
-
 /* 1. CONFIGURAÇÃO: mude as regras aqui, em um lugar só */
 const MAX_PARCELAS = 24;          // limite de parcelas
 const INICIO_JUROS = 12;          // a partir de Nx cobra juros (troque por 13 para "12x sem juros")
