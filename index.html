@@ -3,29 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SellCar</title>
+    <title>SellCar | Clássicos JDM raros</title>
+    <meta name="description" content="A loja online dos clássicos e raros carros JDM dos anos 80 e 90, pelo preço original.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="topo">
-        <h1>SellCar</h1>
+        <a href="index.html" class="logo">SELL<span>CAR</span></a>
     </header>
-    <main class="conteudo hero">
-        <div class="hero_texto">
-            <h1>Clássicos raros. Preço original.</h1>
-            <p>Bem-vindo ao SellCar a loja online dos classicos e raros carros JDM(Japanese Domestic Market) dos anos 80 e 90 que você vai encontrar pelo preço original</p>
-            <a href="cadastro.html" class="btn">Criar cadastro</a>
-        </div>
-        <div class="hero_video">
-            <video autoplay muted loop>
-                <source src="assets/mp4/supra.mp4" type="video/mp4">
-                Seu navegador não suporta vídeo.
-            </video>
-        </div>
+
+    <main>
+        <section class="conteudo hero">
+            <div class="hero_texto">
+                <p class="etiqueta">JDM · Anos 80 e 90</p>
+                <h1>Clássicos raros. Preço original.</h1>
+                <p>A loja online dos clássicos e raros carros JDM (Japanese Domestic Market), pelo preço original. Crie seu cadastro para abrir o catálogo.</p>
+                <div class="acoes">
+                    <a href="cadastro.html" class="btn">Criar cadastro</a>
+                    <a href="pageMain.html" class="btn btn--contorno">Já tenho cadastro</a>
+                </div>
+            </div>
+            <div class="hero_video">
+                <video autoplay muted loop playsinline aria-label="Toyota Supra em movimento">
+                    <source src="assets/mp4/supra.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeo.
+                </video>
+            </div>
+        </section>
+
     </main>
-    
+
     <footer>
-        <p>&copy; Eduardo França</p>
+        <p>&copy; Eduardo França · SellCar</p>
     </footer>
 </body>
 </html>

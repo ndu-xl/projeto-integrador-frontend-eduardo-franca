@@ -1,35 +1,54 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SellCar</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | SellCar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <header>
-      <h1 id="title">Cadastro SellCar
-      <img id="logo" src="assets/svg/logo.svg" alt="logo" width="150"></h1>
+</head>
+<body>
+    <header class="topo">
+        <a href="index.html" class="logo">SELL<span>CAR</span></a>
     </header>
+
     <main>
-      <fieldset>
-        <legend>Preencha as informações necessárias para começar</legend>
-        <section>
-          <p>Qual o seu nome:
-          <input type="text" id="campo"/></p>
-          <p>Qual o seu email:
-          <input type="email" id="campo"/></p>
-          <p>Qual o seu telefone:
-          <input type="number" id="campo"/></p>
+        <section class="conteudo hero">
+            <div class="hero_texto">
+                <h1>Entre na garagem.</h1>
+                <p>Três campos e o catálogo de clássicos JDM abre para você.</p>
+            </div>
+
+            <form class="form-card" action="pageMain.html">
+                <fieldset>
+                    <legend>Preencha para começar</legend>
+
+                    <div class="campo">
+                        <label for="nome">Seu nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Como podemos te chamar?" autocomplete="name" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">Seu e-mail</label>
+                        <input type="email" id="email" name="email" placeholder="nome@email.com" autocomplete="email" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="telefone">Seu telefone</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(83) 90000-0000" autocomplete="tel" required>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="btn btn--bloco">Confirmar cadastro</button>
+            </form>
         </section>
-      </fieldset>
-      <br>
-      <section>
-        <button id="confirmar"><a href="pageMain.html">Confirmar Cadastro</a></button>
-      </section>
     </main>
+
     <footer>
-      <h4>&copy;Eduardo França</h4>
+        <p>&copy; Eduardo França · SellCar</p>
     </footer>
-  </body>
+</body>
 </html>
