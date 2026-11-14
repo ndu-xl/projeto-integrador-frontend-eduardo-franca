@@ -117,9 +117,10 @@ h1, h2, .logo {
   width: 100%;
 }
 
+/* 6. HERO (usado na página inicial e no cadastro) */
 .hero {
   display: flex;
-  flex-wrap: wrap;          
+  flex-wrap: wrap;           /* no celular, o bloco da direita desce */
   align-items: center;
   gap: 3rem;
 }
@@ -165,9 +166,10 @@ h1, h2, .logo {
 .hero_video video {
   width: 100%;
   height: 100%;
-  object-fit: cover;    
+  object-fit: cover;         /* preenche a caixa sem esticar o vídeo */
 }
 
+/* 7. CARDS */
 .diferenciais {
   display: flex;
   flex-wrap: wrap;
@@ -189,6 +191,7 @@ h1, h2, .logo {
 }
 .card p { color: var(--texto-suave); }
 
+/* 8. FORMULÁRIO (cadastro) */
 .form-card {
   max-width: 30rem;
   background-color: var(--superficie);
@@ -225,6 +228,7 @@ h1, h2, .logo {
 }
 .campo input::placeholder { color: var(--texto-suave); }
 
+/* 9. RODAPÉ */
 footer {
   padding: 1.5rem;
   border-top: 1px solid var(--borda);
@@ -233,30 +237,125 @@ footer {
   text-align: center;
 }
 
-header:not(.topo) {
-  padding: 1.5rem;
-  text-align: center;
+/* 10. CATÁLOGO */
+.menu a[aria-current="page"] { color: var(--texto); }
+
+.cabecalho-pagina { margin-bottom: 3rem; }
+.cabecalho-pagina h1 {
+  font-size: clamp(2.75rem, 8vw, 4.5rem);
+  line-height: 0.95;
+  margin-bottom: 1rem;
 }
-main:not(:has(.conteudo)) {
-  padding: 1.5rem;
-  text-align: center;
+.cabecalho-pagina p {
+  color: var(--texto-suave);
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
 }
-#title { font-size: 2.5rem; }
-header nav a { margin: 0 0.75rem; }
-table {
-  border: solid white 1px;
-  margin: 1rem auto;
+
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
 }
-th, td { padding: 0.5rem 0.75rem; }
-fieldset { border: 1px solid var(--borda); padding: 1rem; }
-video { max-width: 100%; }
-#confirmar {
-  padding: 10px;
-  background-color: var(--destaque);
-  border: 0;
-  border-radius: 15px;
-}
-#confirmar a {
-  color: #fff;
+.filtro {
+  padding: 0.5rem 1.25rem;
+  color: var(--texto);
+  font-weight: 600;
   text-decoration: none;
+  border: 1px solid #5A5F6E;
+  border-radius: 999px;
+  transition: background-color 0.2s;
 }
+.filtro:hover { background-color: var(--superficie); }
+
+.categoria + .categoria { margin-top: 3.5rem; }
+.categoria h2 {
+  font-size: 2.25rem;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+
+.grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: 1.5rem;
+}
+
+.carro {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--superficie);
+  border: 1px solid var(--borda);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.carro video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  background-color: #1E2028;
+}
+
+.carro_info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.25rem;
+}
+.carro_marca { color: var(--texto-suave); font-size: 0.875rem; }
+.carro h3 {
+  font-family: var(--fonte-titulo);
+  font-size: 1.625rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+.specs {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  color: var(--texto-suave);
+  font-size: 0.9375rem;
+}
+
+.carro_rodape {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: auto;
+  padding-top: 1rem;
+}
+.preco { font-size: 1.25rem; }
+.carro .btn { padding: 0.625rem 1rem; font-size: 0.9375rem; }
+
+/* 11. CONFIRMAÇÃO DE CONTATO */
+.confirmacao {
+  max-width: 44rem;
+  text-align: center;
+}
+.selo {
+  display: grid;
+  place-items: center;
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto 1.5rem;
+  color: var(--destaque-claro);
+  font-size: 2rem;
+  border: 2px solid var(--destaque-claro);
+  border-radius: 50%;
+}
+.confirmacao h1 {
+  font-size: clamp(2.5rem, 7vw, 4rem);
+  line-height: 0.95;
+  margin-bottom: 1.25rem;
+}
+.confirmacao p {
+  color: var(--texto-suave);
+  font-size: 1.125rem;
+  margin: 0 auto 2rem;
+  max-width: 34rem;
+}
+.confirmacao .acoes { justify-content: center; }

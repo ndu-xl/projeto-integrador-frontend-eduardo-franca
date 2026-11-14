@@ -1,291 +1,198 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SellCar</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo | SellCar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <header>
-      <h1 id="title">Seja bem-vindo ao SellCar
-      <img src="assets/svg/logo.svg" alt="" width="150" /></h1>
-      <h2>Escolha o tipo do carro:</h2>
-      <nav>
-        <a href="#cupe">Cupê</a>
-        <a href="#seda">Sedã</a>
-        <a href="#hatch">Hatch</a>
-      </nav>
+</head>
+<body>
+    <header class="topo">
+        <a href="index.html" class="logo">SELL<span>CAR</span></a>
     </header>
-    <br />
+
     <main>
-      <fieldset>
-        <legend>Últimos carros do mercado</legend>
-        <section id="cupe">
-          <h2>Cupê</h2>
-          <article>
-            <video
-              preload="auto"
-              controls
-              src="assets/mp4/supra.mp4"
-              autoplay
-              muted="true"
-              width="300"
-              loop="true"
-            ></video>
-            <table>
-              <tr>
-                <th>Marca</th>
-                <th>Modelo</th>
-                <th>Preço</th>
-                <th>Km</th>
-                <th>Ano</th>
-              </tr>
+        <div class="conteudo">
+            <div class="cabecalho-pagina">
+                <h1>Catálogo</h1>
+                <p>Os últimos clássicos JDM do mercado. Escolha o tipo do carro:</p>
+                <nav class="filtros" aria-label="Tipos de carro">
+                    <a href="#cupe" class="filtro">Cupê</a>
+                    <a href="#seda" class="filtro">Sedã</a>
+                    <a href="#hatch" class="filtro">Hatch</a>
+                </nav>
+            </div>
 
-              <tr>
-                <td>Toyota</td>
-                <td>Supra MK4</td>
-                <td>R$ 450.000</td>
-                <td>85.000 km</td>
-                <td>1997</td>
-              </tr>
-            </table>
-            <button id="confirmar">
-              <a href="entrarEmContato.html">Entrar em Contato</a>
-            </button>
-          </article>
-          <br />
-          <article>
-            <video
-              preload="auto"
-              controls
-              src="assets/mp4/gtr-r34.mp4"
-              autoplay
-              muted="true"
-              width="300"
-              loop="true"
-            ></video>
-            <table>
-              <tr>
-                <th>Marca</th>
-                <th>Modelo</th>
-                <th>Preço</th>
-                <th>Km</th>
-                <th>Ano</th>
-              </tr>
-              <tr>
-                <td>Nissan</td>
-                <td>Skyline GT-R R34</td>
-                <td>R$ 1.500.000</td>
-                <td>62.000 km</td>
-                <td>1999</td>
-              </tr>
-            </table>
-            <button id="confirmar">
-              <a href="entrarEmContato.html">Entrar em Contato</a>
-            </button>
-          </article>
-          <br />
-          <article>
-            <video
-              preload="auto"
-              controls
-              src="assets/mp4/mazda.mp4"
-              autoplay
-              muted="true"
-              width="300"
-              loop="true"
-            ></video>
-            <table>
-              <tr>
-                <th>Marca</th>
-                <th>Modelo</th>
-                <th>Preço</th>
-                <th>Km</th>
-                <th>Ano</th>
-              </tr>
+            <section class="categoria" id="cupe">
+                <h2>Cupê</h2>
+                <div class="grade">
+                    <article class="carro">
+                        <video controls muted loop autoplay preload="metadata" aria-label="Toyota Supra MK4 em vídeo">
+                            <source src="assets/mp4/supra.mp4#t=0.1" type="video/mp4">
+                            Seu navegador não suporta vídeo.
+                        </video>
+                        <div class="carro_info">
+                            <p class="carro_marca">Toyota</p>
+                            <h3>Supra MK4</h3>
+                            <ul class="specs">
+                                <li>1997</li>
+                                <li>85.000 km</li>
+                            </ul>
+                            <div class="carro_rodape">
+                                <strong class="preco">R$ 450.000</strong>
+                                <a href="entrarEmContato.html" class="btn" aria-label="Entrar em contato sobre o Toyota Supra MK4">Entrar em contato</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="carro">
+                        <video controls muted loop autoplay preload="metadata" aria-label="Nissan Skyline GT-R R34 em vídeo">
+                            <source src="assets/mp4/gtr-r34.mp4#t=0.1" type="video/mp4">
+                            Seu navegador não suporta vídeo.
+                        </video>
+                        <div class="carro_info">
+                            <p class="carro_marca">Nissan</p>
+                            <h3>Skyline GT-R R34</h3>
+                            <ul class="specs">
+                                <li>1999</li>
+                                <li>62.000 km</li>
+                            </ul>
+                            <div class="carro_rodape">
+                                <strong class="preco">R$ 1.500.000</strong>
+                                <a href="entrarEmContato.html" class="btn" aria-label="Entrar em contato sobre o Nissan Skyline GT-R R34">Entrar em contato</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="carro">
+                        <video controls muted loop autoplay preload="metadata" aria-label="Mazda RX-7 FD em vídeo">
+                            <source src="assets/mp4/mazda.mp4#t=0.1" type="video/mp4">
+                            Seu navegador não suporta vídeo.
+                        </video>
+                        <div class="carro_info">
+                            <p class="carro_marca">Mazda</p>
+                            <h3>RX-7 FD</h3>
+                            <ul class="specs">
+                                <li>1995</li>
+                                <li>78.000 km</li>
+                            </ul>
+                            <div class="carro_rodape">
+                                <strong class="preco">R$ 380.000</strong>
+                                <a href="entrarEmContato.html" class="btn" aria-label="Entrar em contato sobre o Mazda RX-7 FD">Entrar em contato</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="carro">
+                        <video controls muted loop autoplay preload="metadata" aria-label="Honda NSX em vídeo">
+                            <source src="assets/mp4/nsx.mp4#t=0.1" type="video/mp4">
+                            Seu navegador não suporta vídeo.
+                        </video>
+                        <div class="carro_info">
+                            <p class="carro_marca">Honda</p>
+                            <h3>NSX</h3>
+                            <ul class="specs">
+                                <li>1992</li>
+                                <li>55.000 km</li>
+                            </ul>
+                            <div class="carro_rodape">
+                                <strong class="preco">R$ 900.000</strong>
+                                <a href="entrarEmContato.html" class="btn" aria-label="Entrar em contato sobre o Honda NSX">Entrar em contato</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
 
-              <tr>
-                <td>Mazda</td>
-                <td>RX-7 FD</td>
-                <td>R$ 380.000</td>
-                <td>78.000 km</td>
-                <td>1995</td>
-              </tr>
-            </table>
-            <button id="confirmar">
-              <a href="entrarEmContato.html">Entrar em Contato</a>
-            </button>
-          </article>
-          <br />
-          <article>
-            <video
-              preload="auto"
-              controls
-              src="assets/mp4/nsx.mp4"
-              autoplay
-              muted="true"
-              width="300"
-              loop="true"
-            ></video>
-            <table>
-              <tr>
-                <th>Marca</th>
-                <th>Modelo</th>
-                <th>Preço</th>
-                <th>Km</th>
-                <th>Ano</th>
-              </tr>
+            <section class="categoria" id="seda">
+                <h2>Sedã</h2>
+                <div class="grade">
+                    <article class="carro">
+                        <video controls muted loop autoplay preload="metadata" aria-label="Mitsubishi Lancer Evolution VI em vídeo">
+                            <source src="assets/mp4/lancer.mp4#t=0.1" type="video/mp4">
+                            Seu navegador não suporta vídeo.
+                        </video>
+                        <div class="carro_info">
+                            <p class="carro_marca">Mitsubishi</p>
+                            <h3>Lancer Evolution VI</h3>
+                            <ul class="specs">
+                                <li>1999</li>
+                                <li>92.000 km</li>
+                            </ul>
+                            <div class="carro_rodape">
+                                <strong class="preco">R$ 350.000</strong>
+                                <a href="entrarEmContato.html" class="btn" aria-label="Entrar em contato sobre o Mitsubishi Lancer Evolution VI">Entrar em contato</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="carro">
+                        <video controls muted loop autoplay preload="metadata" aria-label="Subaru Impreza WRX STI em vídeo">
+                            <source src="assets/mp4/subaru.mp4#t=0.1" type="video/mp4">
+                            Seu navegador não suporta vídeo.
+                        </video>
+                        <div class="carro_info">
+                            <p class="carro_marca">Subaru</p>
+                            <h3>Impreza WRX STI</h3>
+                            <ul class="specs">
+                                <li>2000</li>
+                                <li>110.000 km</li>
+                            </ul>
+                            <div class="carro_rodape">
+                                <strong class="preco">R$ 280.000</strong>
+                                <a href="entrarEmContato.html" class="btn" aria-label="Entrar em contato sobre o Subaru Impreza WRX STI">Entrar em contato</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
 
-              <tr>
-                <td>Honda</td>
-                <td>NSX</td>
-                <td>R$ 900.000</td>
-                <td>55.000 km</td>
-                <td>1992</td>
-              </tr>
-            </table>
-            <button id="confirmar">
-              <a href="entrarEmContato.html">Entrar em Contato</a>
-            </button>
-          </article>
-          <br />
-        </section>
-        <section id="seda">
-          <h2>Sedã</h2>
-          <article>
-            <video
-              preload="auto"
-              controls
-              src="assets/mp4/lancer.mp4"
-              autoplay
-              muted="true"
-              width="300"
-              loop="true"
-            ></video>
-            <table>
-              <tr>
-                <th>Marca</th>
-                <th>Modelo</th>
-                <th>Preço</th>
-                <th>Km</th>
-                <th>Ano</th>
-              </tr>
-
-              <tr>
-            <td>Mitsubishi</td>
-            <td>Lancer Evolution VI</td>
-            <td>R$ 350.000</td>
-            <td>92.000 km</td>
-            <td>1999</td>
-        </tr>
-            </table>
-            <button id="confirmar">
-              <a href="entrarEmContato.html">Entrar em Contato</a>
-            </button>
-          </article>
-          <article>
-            <video
-              preload="auto"
-              controls
-              src="assets/mp4/subaru.mp4"
-              autoplay
-              muted="true"
-              width="300"
-              loop="true"
-            ></video>
-            <table>
-              <tr>
-                <th>Marca</th>
-                <th>Modelo</th>
-                <th>Preço</th>
-                <th>Km</th>
-                <th>Ano</th>
-              </tr>
-
-              <tr>
-                <td>Subaru</td>
-                <td>Impreza WRX STI</td>
-                <td>R$ 280.000</td>
-                <td>110.000 km</td>
-                <td>2000</td>
-              </tr>
-            </table>
-            <button id="confirmar">
-              <a href="entrarEmContato.html">Entrar em Contato</a>
-            </button>
-          </article>
-          <br />
-        </section>
-        <section id="hatch">
-          <h2>Hatch</h2>
-          <article>
-            <video
-              preload="auto"
-              controls
-              src="assets/mp4/Civic Type R EK9.mp4"
-              autoplay
-              muted="true"
-              width="300"
-              loop="true"
-            ></video>
-            <table>
-              <tr>
-                <th>Marca</th>
-                <th>Modelo</th>
-                <th>Preço</th>
-                <th>Km</th>
-                <th>Ano</th>
-              </tr>
-
-              <tr>
-                <td>Honda</td>
-                <td>Civic Type R EK9</td>
-                <td>R$ 180.000</td>
-                <td>120.000 km</td>
-                <td>1997</td>
-              </tr>
-            </table>
-            <button id="confirmar">
-              <a href="entrarEmContato.html">Entrar em Contato</a>
-            </button>
-          </article>
-          <br />
-          <article>
-            <video
-              preload="auto"
-              controls
-              src="assets/mp4/Toyota Starlet Glanza V.mp4"
-              autoplay
-              muted="true"
-              width="300"
-              loop="true"
-            ></video>
-            <table>
-              <tr>
-                <th>Marca</th>
-                <th>Modelo</th>
-                <th>Preço</th>
-                <th>Km</th>
-                <th>Ano</th>
-              </tr>
-
-              <tr>
-                <td>Toyota</td>
-                <td>Starlet Glanza V</td>
-                <td>R$ 140.000</td>
-                <td>105.000 km</td>
-                <td>1996</td>
-              </tr>
-            </table>
-            <button id="confirmar">
-              <a href="entrarEmContato.html">Entrar em Contato</a>
-            </button>
-          </article>
-          <br />
-        </section>
-      </fieldset>
+            <section class="categoria" id="hatch">
+                <h2>Hatch</h2>
+                <div class="grade">
+                    <article class="carro">
+                        <video controls muted loop autoplay preload="metadata" aria-label="Honda Civic Type R EK9 em vídeo">
+                            <source src="assets/mp4/Civic%20Type%20R%20EK9.mp4#t=0.1" type="video/mp4">
+                            Seu navegador não suporta vídeo.
+                        </video>
+                        <div class="carro_info">
+                            <p class="carro_marca">Honda</p>
+                            <h3>Civic Type R EK9</h3>
+                            <ul class="specs">
+                                <li>1997</li>
+                                <li>120.000 km</li>
+                            </ul>
+                            <div class="carro_rodape">
+                                <strong class="preco">R$ 180.000</strong>
+                                <a href="entrarEmContato.html" class="btn" aria-label="Entrar em contato sobre o Honda Civic Type R EK9">Entrar em contato</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="carro">
+                        <video controls muted loop autoplay preload="metadata" aria-label="Toyota Starlet Glanza V em vídeo">
+                            <source src="assets/mp4/Toyota%20Starlet%20Glanza%20V.mp4#t=0.1" type="video/mp4">
+                            Seu navegador não suporta vídeo.
+                        </video>
+                        <div class="carro_info">
+                            <p class="carro_marca">Toyota</p>
+                            <h3>Starlet Glanza V</h3>
+                            <ul class="specs">
+                                <li>1996</li>
+                                <li>105.000 km</li>
+                            </ul>
+                            <div class="carro_rodape">
+                                <strong class="preco">R$ 140.000</strong>
+                                <a href="entrarEmContato.html" class="btn" aria-label="Entrar em contato sobre o Toyota Starlet Glanza V">Entrar em contato</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
     </main>
-    <footer>&copy Eduardo França</footer>
-  </body>
+
+    <footer>
+        <p>&copy; Eduardo França · SellCar</p>
+    </footer>
+</body>
 </html>

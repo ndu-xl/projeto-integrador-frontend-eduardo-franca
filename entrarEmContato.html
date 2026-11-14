@@ -3,21 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SellCar</title>
+    <title>Contato | SellCar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1 id="title">Entrar em contato
-        <img src="assets/svg/logo.svg" alt="" width="150"></h1>
+    <header class="topo">
+        <a href="index.html" class="logo">SELL<span>CAR</span></a>
     </header>
+
     <main>
-        <h2>Estamos entrando em contato com o vendedor</h2>
-        <p>Mais informações serão disponibilizadas ao seu email assim que a montadora entrar em contato, enquanto isso volte e confira mais carros</p>
-        <button id="confirmar"><a href="pageMain.html">Voltar</a></button>
+        <section class="conteudo confirmacao">
+            <div class="selo" aria-hidden="true">&#10003;</div>
+            <h1>Estamos falando com o vendedor</h1>
+            <p>Mais informações serão enviadas ao seu e-mail assim que o vendedor responder. Enquanto isso, volte e confira mais carros.</p>
+            <div class="acoes">
+                <a href="pageMain.html" class="btn">Voltar ao catálogo</a>
+                <a href="index.html" class="btn btn--contorno">Página inicial</a>
+            </div>
+        </section>
     </main>
+
     <footer>
-        <h4>&copyEduardo França</h4>
+        <p>&copy; Eduardo França · SellCar</p>
     </footer>
 </body>
 </html>
