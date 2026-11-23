@@ -107,3 +107,12 @@ Conceito: **uma garagem japonesa à noite**. Fundo escuro para que o carro seja 
 - **O catálogo não é protegido.** Qualquer pessoa pode abrir `pageMain.html` direto, sem se cadastrar.
 - **Os dados dos carros são fixos no HTML** e fictícios.
 - **Taxa de juros ilustrativa:** 1,5% ao mês foi escolhida para demonstração e não representa uma simulação de financiamento real.
+
+
+---
+
+## Avaliação em Pares
+
+Esta seção será preenchida conforme as orientações da disciplina, incluindo as avaliações realizadas pelos integrantes do grupo.
+
+**Avaliações pendentes:** aguardando realização e preenchimento.

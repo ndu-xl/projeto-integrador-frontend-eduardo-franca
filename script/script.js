@@ -5,7 +5,6 @@ const TAXA_MENSAL = 0.015;        // 1,5% ao mês, multiplicando a cada parcela 
 const PARCELAS_INICIAIS = 10;     // valor em que o seletor começa
 const CHAVE_PEDIDO = 'sellcar_pedido';
 
-/* 2. FUNÇÕES */
 function formatarReais(valor) {
   return valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 }
@@ -39,14 +38,13 @@ function textoTotal(r) {
   return 'Total ' + formatarReais(r.total) + ' (+' + formatarPorcentagem(r.jurosAcumulados) + ' de juros)';
 }
 
-/* 3. CATÁLOGO */
 function criarParcelamento(carro, indice) {
   const precoEl = carro.querySelector('.preco');
   const rodape = carro.querySelector('.carro_rodape');
   const botao = carro.querySelector('.btn');
   if (!precoEl || !rodape || !botao) return;
 
-  const preco = Number(precoEl.textContent.replace(/\D/g, ''));   // "R$ 450.000" vira 450000
+  const preco = Number(precoEl.textContent.replace(/\D/g, '')); 
   const nomeCarro = carro.querySelector('.carro_marca').textContent + ' ' + carro.querySelector('h3').textContent;
   const idCampo = 'parcelas-' + indice;
 
@@ -75,7 +73,6 @@ function criarParcelamento(carro, indice) {
   campo.addEventListener('input', atualizar);
   atualizar();
 
-  // ao clicar em "Entrar em contato", guarda a escolha para a próxima página
   botao.addEventListener('click', function () {
     const r = calcularParcelamento(preco, Number(campo.value));
     const pedido = {
@@ -96,7 +93,6 @@ function criarParcelamento(carro, indice) {
 
 document.querySelectorAll('.carro').forEach(criarParcelamento);
 
-/* 4. CONTATO */
 const confirmacao = document.querySelector('.confirmacao');
 
 if (confirmacao) {
